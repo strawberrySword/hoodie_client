@@ -4,3 +4,49 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+html {
+  font-size: 62.5%;
+}
+
+.page {
+  margin: 1rem;
+  max-width: 45ch;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.btn{
+  font-size: 150%;
+  padding: 1rem;
+  height: auto;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-yellow{
+  background-color: #03ffcc;
+}
+
+@media screen and (max-width: 370px){
+  html{
+    font-size: 50%;
+  }
+  .form_items_holder{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 340px){
+  html{
+    font-size: 30%;
+  }
+}
